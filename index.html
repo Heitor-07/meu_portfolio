@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Heitor</title>
+</head>
+<body onload="escrevendo(fname);">
+  <div id="div-top">
+    <!-- TOPO -->
+    <div id="home"></div>
+    <header id="topo">
+        
+        <nav class="menu">
+            <div class="div-logo">
+              <a href="#home" class="logo">
+                H
+            </a>
+            </div>
+            <input type="checkbox" id="botao-menu">
+            <label for="botao-menu">
+              &#9776
+            </label>
+            <div class="menu-link">
+              <a href="#home">Home</a>
+              <a href="#sobre">Sobre</a>
+              <a href="#habilidades">Habilidades</a>
+              <a href="#projetos">Projetos</a>
+              <a href="#contatos">Contatos</a>
+            </div> 
+        </nav>
+    </header>
+    <!-- Fim menu -->
+
+    <section class="banner-topo-apresentacao">
+            <div class="container bem-vindo">
+                <p  class="text-white">
+                  <span id="texto-apresentacao">Olá! Eu sou Heitor, Desenvolvedor Front End.</span> 
+                </p>
+            </div>
+    </section>
+    <!--Fim seção Banner topo-->
+  </div>
+  <br>
+  <!--Sobre mim-->
+  <section id="sobre">
+    <div class="container d-flex align-items-center show">
+      <div id="sobre-descricao"></div>
+        <div class="row">
+          <div class="col-lg-8 sobre">
+            <h1>Sobre mim</h1>
+            
+            <p>
+              Olá, sou Heitor Augusto e sou apaixonado por construir coisas para a web. Comecei meus estudos vendo tutoriais no Youtube sobre lógica de programação e logo em seguida Html e demais tecnologias voltadas para web.
+            </p>
+            <p>
+              Cultivei minha paixão por codificação estudando a área de TI, construindo sites com Html, CSS, JavaScript e etc.
+            </p>
+            <p>
+              Agora estou procurando uma posição de desenvolvedor júnior para finalmente iniciar minha carreira e aprender entres os profissionais.
+            </p>
+          </div>
+          <div id="gif-helloWorld" class="col-lg-4">
+            <img src="image/git-helloWorld.gif">
+          </div>
+        </div>
+    </div> 
+  </section>
+  <!--Fim seção Sobre mim-->
+
+  <!--Minhas Habilidades-->
+  <section id="habilidades">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Minhas Habilidades</h1>
+        </div>
+        <div class="col-12">
+          <div class="skills">
+            <div>Html</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>Bootstrap</div>
+            <div>JQuery</div>
+            <div>PHP</div>
+            <div>MySQL</div>
+            <div>Git/GitHub</div>
+            <div>API</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fim seção Habilidade-->
+
+  <!--Meus Projetos-->
+
+  <section id="projetos">
+    <div class="container">
+      <div class="projetos-class">
+        <div>
+          <h1>Projetos</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="menu-projeto">
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="mudaImageProj('image/image2.png')">Clínica Médica</button>
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="mudaImageProj('image/image3.png')">Orçamento Pessoal</button>
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="mudaImageProj('image/image4.png')">
+                Jogo - Mata Inseto</button>
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="mudaImageProj('image/image5.png')">Buscar CEP</button>
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="mudaImageProj('image/image2.png')">
+                Site de notícias</button>
+            </div>
+          </div>
+          <div class="col-lg-6" id="projImg">
+            <div class="projetos-imagens">
+              <img src="image/image1.jpg" id="imageProj">
+              <p>
+                Esse projeto é uma landing Page para uma clínica médica
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center">
+              <img src="" id="imageModal">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Fim seção Projetos-->
+
+  
+  <!-- Links de contato -->
+  <div class="link-contato-lateral">
+
+      <a href="https://github.com/Heitor-07" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/heitor-augusto-9a8a2b138/" target="_blank">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
+
+      <a href="mailto:heitor.a.ha@gmail.com" target="_blank">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://wa.me/5513988343439?text=Heitor" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+
+    <!--linha-->
+    <div class="linha"></div>
+  </div>
+
+  <!--Botão subir fixo-->
+  <a href="#topo" id="seta-subir">
+    <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+  </a>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="js/js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+</body>
+</html>
