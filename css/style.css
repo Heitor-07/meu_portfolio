@@ -163,6 +163,15 @@ body{
         display: none;
     }
 
+    #habilidades h1 {
+        display: none;
+    }
+
+    .titulo-habilidades{
+        display: block !important;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -177,12 +186,36 @@ body{
         width: 100%;
     }
 
+    #habilidades h1 {
+        font-size: 2rem !important;
+    }
+    
+    #habilidades h1 {
+        display: none;
+    }
+
+    .titulo-habilidades{
+        display: block !important;
+        text-align: center;
+    }
+    
 }
+
+@media screen and (max-width: 11801px) {
+
+    #habilidades h1 {
+        font-size: 4rem !important;
+    }
+    
+    
+}
+
 
 @media screen and (max-width: 1140px) {
 
     .sobre{
-        width: 100%;
+        width: 90%;
+        margin-left: 60px;
     }
 
     /* gif seção sobre mim */
@@ -190,10 +223,12 @@ body{
         display: none;
     }
 
-    
-  
-}
+    #habilidades h1 {
+        font-size: 4rem !important;
+    }
 
+    
+}
 
 /* -------- Seção de apresentação e boas vindas ------ */
 
@@ -209,7 +244,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 50%;
-    top: -50px;
 }
 
 .bem-vindo span{
@@ -243,12 +277,15 @@ body{
     background-color: #000;
     background-image: linear-gradient(to top, black, rgb(29, 28, 28));
     color: #fff;
-    padding-top: 40px;
+    padding-top: 70px;
 }
 
 #habilidades h1 {
-    text-align: center;
+    font-size: 3.8em;
+}
 
+.titulo-habilidades{
+    display: none;
 }
 
 .skills {
@@ -262,27 +299,19 @@ body{
 
 .skills div {
     height: 27%;
-    width: 112px;
+    width: 140px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    font-size: medium;
+    font-size: 1.8rem;
     font-weight: bold;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #000;
-    border: solid 1px #000;
-    background-color: #fff;
+    color: #fff;
     border-radius: 100%;
     text-align: center;
     margin: 5px;
     transition: all .3s ease-in-out;
-}
-
-.skills div:hover{
-    background-color: #000;
-    color: #fff;
-    border: solid 2px #fff;
 }
 
 /* ------------ Projetos ----------- */
