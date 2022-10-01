@@ -155,7 +155,7 @@ body{
     /* imagens Projetos */
 
     #projImg{
-        display: none;
+        display: none !important;
     }
 
     /* --- Links contato lateral  */
@@ -179,7 +179,7 @@ body{
     /* imagens Projetos */
 
     #projImg{
-        display: none;
+        display: none !important;
     }
 
     .menu-projeto{
@@ -282,10 +282,14 @@ body{
 
 #habilidades h1 {
     font-size: 3.8em;
+    color: #d5ecb8;
+    font-weight: bold;
 }
 
 .titulo-habilidades{
     display: none;
+    color: #d5ecb8;
+    font-weight: bold;
 }
 
 .skills {
@@ -318,13 +322,16 @@ body{
 
 #projetos{
     background-color: #fff;
+    background-image: url(/image/fundo-projetos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .projetos-class {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 50px;
     height: 100vh;
     padding: 45px;
 }
@@ -333,25 +340,18 @@ body{
     margin-left: 10px;
 }
 
+#projImg {
+    display: flex;
+    align-items: center;
+}
+
+#projImg img {
+    box-shadow: 20px 10px 7px  rgb(32, 32, 32);
+}
+
 #projImg img, #imageModal {
-    width: 300px;
-}
-
-#projImg{
-    position: relative;
-    top: 0;
-    animation: animeImg 2.5s infinite;
-}
-
-@keyframes animeImg {
-    0%{
-        top: 0;
-    }
-    50%{
-        top: 50px;
-    }
-
-    
+    width: 80%;
+    height: 230px;
 }
 
 .menu-projeto{
@@ -367,7 +367,6 @@ body{
     padding: 10px;
     color: #fff;
     border: none;
-    border-bottom-right-radius: 30%;
     transition: all .3s ease-in-out;
     text-align: left;
 }
@@ -378,7 +377,17 @@ body{
 
 .projetos-imagens {
     text-align: center;
-    transform: rotate(10deg)
+}
+
+#legendaimage{
+    margin-top: 10px;
+}
+
+/*------ Footer ---------*/
+
+footer {
+    background-image: linear-gradient(to top, black, rgb(29, 28, 28));
+    color: #fff;
 }
 
 
@@ -400,7 +409,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
+    height: 380px;
     padding: 5px 5px 0;
     bottom: 0;
     left: 30px;
@@ -434,6 +443,6 @@ body{
     border-radius: 0% !important;
     width: 2px;
     padding: 0px;
-    height: 140px;
+    height: 170px;
     border: solid 1px #fff;
 }
