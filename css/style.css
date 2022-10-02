@@ -259,7 +259,8 @@ body{
 }
 
 #sobre {
-    background-image: url("/image/fundo-sobre.jpg");
+    background-color: #fff;
+    background-image: url(/image/fundo-sobre.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
