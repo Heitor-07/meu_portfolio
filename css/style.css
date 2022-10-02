@@ -108,7 +108,7 @@ body{
     cursor: pointer;
 }
 
-@media screen and (max-width: 795px) {
+@media screen and (min-width: 500px) and (max-width: 795px) {
 
     #topo nav {
         width: 100% !important;
@@ -152,6 +152,12 @@ body{
         display: none;
     }
 
+    /* --- Sobre ----*/
+
+    #gif-helloWorld{
+        display: none !important;
+    }
+
     /* imagens Projetos */
 
     #projImg{
@@ -172,24 +178,48 @@ body{
         text-align: center;
     }
 
-}
+    /* Rodapé*/
+    footer {
+        display: block !important;
+        background-image: linear-gradient(to top, black, rgb(29, 28, 28));
+    }
 
-@media screen and (max-width: 991px) {
+    .rodape{
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2rem;
+    }
+    
+    .rodape a {
+        color: #d5ecb8;
+    }
 
-    /* imagens Projetos */
-
-    #projImg{
+    /* Menu contatos lateral*/
+    .link-contato-lateral{
         display: none !important;
     }
 
-    .menu-projeto{
-        width: 100%;
+    .link-contato-superior{
+        z-index: 1;
     }
 
-    #habilidades h1 {
-        font-size: 2rem !important;
-    }
+}
+
+@media screen and (min-width: 796px) and (max-width: 990px){
     
+    /* seção sobre */
+    #gif-helloWorld img{
+        display: none;
+    }
+
+    .sobre {
+        font-size: 1.3rem;
+    }
+
+    /* seção habilidades */
+
     #habilidades h1 {
         display: none;
     }
@@ -198,37 +228,63 @@ body{
         display: block !important;
         text-align: center;
     }
-    
+
+    /* Seção projetos */
+    #projImg{
+        display: none !important;
+    }
+
+    /* menu contatos lateral */
+    .link-contato-lateral{
+        left: 3px !important;
+    }
+
 }
 
-@media screen and (max-width: 11801px) {
+@media screen and (min-width: 991px) and (max-width: 1099px) {
+
+    /* sobre */
+    .sobre {
+        padding-left: 60px;
+    }
+
+    #gif-helloWorld img {
+        width: 270px !important;
+        height: 270px !important;
+    }
 
     #habilidades h1 {
-        font-size: 4rem !important;
+        font-size: 3rem !important;
+        padding-left: 70px;
     }
-    
-    
+
+    /* seção projetos */
+    .menu-projeto button {
+        width: 300px !important;
+    }
+
 }
 
-
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 1100px) and (max-width: 1280px) {
 
     .sobre{
-        width: 90%;
-        margin-left: 60px;
+        padding: 0 10px !important;
     }
 
     /* gif seção sobre mim */
-    #gif-helloWorld {
-        display: none;
-    }
-
-    #habilidades h1 {
-        font-size: 4rem !important;
+    #gif-helloWorld img {
+        width: 280px !important;
+        height: 270px !important;
     }
 
     
+    #habilidades h1 {
+        font-size: 3rem !important;
+        margin-left: 60px !important;
+    }
 }
+
+
 
 /* -------- Seção de apresentação e boas vindas ------ */
 
@@ -264,6 +320,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 75px;
+}
+
+#gif-helloWorld {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #gif-helloWorld img {
@@ -381,16 +444,14 @@ body{
 }
 
 #legendaimage{
-    margin-top: 10px;
+    text-align: center;
 }
 
 /*------ Footer ---------*/
 
 footer {
-    background-image: linear-gradient(to top, black, rgb(29, 28, 28));
-    color: #fff;
+    display: none;
 }
-
 
 /* seta subir para o inicio */
 
@@ -416,13 +477,13 @@ footer {
     left: 30px;
 }
 
-.link-contato-lateral a {
+.link-contato-lateral a, .link-contato-superior a {
     text-decoration: none;
     border: solid 1px #000;
     color: #000;
 }
 
-.link-contato-lateral a {
+.link-contato-lateral a, .link-contato-superior a {
     display: flex;
     justify-content: center;
     background-color: #fff;
@@ -446,4 +507,26 @@ footer {
     padding: 0px;
     height: 170px;
     border: solid 1px #fff;
+}
+
+.link-contato-superior{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    padding: 5px 5px 0;
+    top: 80px;
+    right: 60px;
+}
+
+.link-contato-superior a:hover{
+    background-color: #000;
+    border: solid 1px #fff;
+    color: #fff;
+}
+
+
+.link-contato-superior{
+    display: none;
 }

@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
@@ -34,9 +36,34 @@
               <a href="#sobre">Sobre</a>
               <a href="#habilidades">Habilidades</a>
               <a href="#projetos">Projetos</a>
-              <a href="#contatos">Contatos</a>
+              <a id="contato" href="#contatos">Contatos</a>
             </div> 
         </nav>
+        <!-- Links de contato -->
+        <div class="link-contato-superior">
+
+          <a href="https://github.com/Heitor-07" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/heitor-augusto-9a8a2b138/" target="_blank">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+
+          <a href="mailto:heitor.a.ha@gmail.com" target="_blank">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://wa.me/5513988343439?text=Heitor" target="_blank">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </a>
+
+          <a href="#" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+
+      </div>
+        
     </header>
     <!-- Fim menu -->
 
@@ -55,7 +82,7 @@
     <div class="container d-flex align-items-center show">
       <div id="sobre-descricao"></div>
         <div class="row">
-          <div class="col-lg-8 sobre">
+          <div class="col-lg-8 col-md-12 sobre">
             <h1>Sobre mim</h1>
             
             <p>
@@ -87,7 +114,7 @@
           <h1>Minhas Habilidades</h1>
         </div>
         
-        <div class="col-xl-6 col-lg-6 col-md-12 col-12 ">
+        <div class="col-xl-6 col-lg-6  col-12 ">
           <div class="skills">
             <div>Html</div>
             <div>CSS</div>
@@ -114,7 +141,7 @@
           <h1>Projetos</h1>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-6">
             <div class="menu-projeto">
               <button data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="mudaImageProj('0')">Clínica Médica</button>
               <button data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="mudaImageProj('1')">Orçamento Pessoal</button>
@@ -125,7 +152,7 @@
                 Site de notícias</button>
             </div>
           </div>
-          <div class="col-lg-6" id="projImg">
+          <div class="col-6" id="projImg">
             <div class="projetos-imagens">
               <img src="image/clinicamedica.png" id="imageProj">
               <p id="legendaimage">
@@ -148,7 +175,7 @@
               <img src="" id="imageModal">
             </div>
             <div class="modal-footer">
-              <p id="legandaImgModal"></p>>
+              <p id="legandaImgModal"></p>
             </div>
           </div>
         </div>
@@ -183,26 +210,33 @@
         <i class="fa fa-instagram" aria-hidden="true"></i>
       </a>
 
-    <!--linha-->
-    <div class="linha"></div>
+    
   </div>
 
-  <!-- <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <p>Telfone:</p>
-        </div>
-        <div class="col-4">
-          <p>E-mail:</p>
-        </div>
-        <div class="col-4">
-          <p>Linkedln</p>
-        </div>
-    </div>
-    </div>
-  </footer> -->
-
+  <footer>
+      <div id="#contatos"></div>
+      <div class="rodape container">
+        <a href="https://github.com/Heitor-07" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+  
+        <a href="https://www.linkedin.com/in/heitor-augusto-9a8a2b138/" target="_blank">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+  
+        <a href="mailto:heitor.a.ha@gmail.com" target="_blank">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+  
+        <a href="https://wa.me/5513988343439?text=Heitor" target="_blank">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+  
+        <a href="#" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+  </footer>
 
   <!--Botão subir fixo-->
   <a href="#topo" id="seta-subir">
