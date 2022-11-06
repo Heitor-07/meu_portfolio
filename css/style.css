@@ -108,6 +108,132 @@ body{
     cursor: pointer;
 }
 
+@media screen and (min-width: 300px) and (max-width: 499px) {
+    #topo nav {
+        width: 100% !important;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+        position: relative;
+        margin-top: -10px;
+    }
+
+    .menu-link {
+        top: -1500px;
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        transition: all .5s ease-in-out;
+        background: rgba(2, 0, 0, 0.95);
+    }
+
+    .menu-link a {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .menu label{
+        display: block;
+        color: #fff;
+        font-size: 50px;
+    }
+    
+    #botao-menu:checked ~ .menu-link{
+        top: -5px;
+        z-index: 1;       
+        transition: all .7s ease-in-out;
+    }
+
+    /* ---- Logo ----- */
+    .menu .div-logo {
+        display: none;
+    }
+
+    /*typewrite */
+    .bem-vindo p {
+        font-size: 0.7em;
+    }
+
+    /* --- Sobre ----*/
+
+    #gif-helloWorld{
+        display: none !important;
+    }
+
+    /* ---- Logo ----- */
+    .menu .div-logo {
+        display: none;
+    }
+
+    /* --- Sobre ----*/
+
+    #gif-helloWorld{
+        display: none !important;
+    }
+
+    #sobre p {
+        font-size: 0.9em;
+    }
+
+    /* imagens Projetos */
+
+    #projImg{
+        display: none !important;
+    }
+
+    .projetos-class {
+        padding: 30px !important;
+    }
+
+    .menu-projeto button {
+        width: 280px !important;
+    }
+
+    /* --- Links contato lateral  */
+    .link-contato-lateral{
+        display: none;
+    }
+
+    #habilidades h1 {
+        display: none;
+    }
+
+    .titulo-habilidades{
+        display: block !important;
+        text-align: center;
+    }
+
+    /* Rodapé*/
+    footer {
+        display: block !important;
+        background-image: linear-gradient(to top, black, rgb(29, 28, 28));
+    }
+
+    .rodape{
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2rem;
+    }
+    
+    .rodape a {
+        color: #d5ecb8;
+    }
+
+    /* Menu contatos lateral*/
+    .link-contato-lateral{
+        display: none !important;
+    }
+
+    .link-contato-superior{
+        z-index: 1;
+    }
+}
+
+
 @media screen and (min-width: 500px) and (max-width: 795px) {
 
     #topo nav {
@@ -122,7 +248,7 @@ body{
     }
 
     .menu-link {
-        top: -1000px;
+        top: -1500px;
         position: relative;
         width: 100%;
         height: 90vh;
@@ -323,6 +449,10 @@ body{
     padding-top: 75px;
 }
 
+.sobre{
+    padding-right: 30px;
+}
+
 #gif-helloWorld {
     display: flex;
     align-items: center;
@@ -441,10 +571,14 @@ body{
 
 .projetos-imagens {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #legendaimage{
-    text-align: center;
+    margin-top: 20px;
+    line-height: 20px;
 }
 
 /*------ Footer ---------*/

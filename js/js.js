@@ -17,7 +17,7 @@ ScrollReveal().reveal('.menu-projeto', {duration: 3000});
 ScrollReveal().reveal('.projetos-imagens', {duration: 4000});
 
 /* ---- Menu contato lateral */
-//ScrollReveal().reveal('.link-contato-lateral', {duration: 4000});
+ScrollReveal().reveal('.link-contato-lateral', {duration: 4000});
 
 /*seta subir*/
 ScrollReveal().reveal('#seta-subir', {duration: 4000});
@@ -41,7 +41,7 @@ function escrevendo (nome) {
     
 }
 
-/* Menu contato collapse JQuery */
+/* Menu contato dinâmico collapse JQuery */
 
 $('#contato').click(function(){
     $('.link-contato-superior').slideToggle(500);
@@ -56,11 +56,11 @@ $('#contato').click(function(){
 */
 
 let bancoImagens = [
-    ['0', 'image/clinicamedica.png', 'Lading Page clínica Médica com Html, css criada durante curso'],
-    ['1','image/orcamentopessoal.png', 'Aplicação para controle de despesas, podendo criar e excluir despesas'],
-    ['2','image/matainseto.png', 'Jogo divertido mata inseto com limite de vida e cronômetro para a vitória'],
-    ['3','image/cep.png', 'Aplicação ligada ao uma API que localizar endereço'],
-    ['4','image/sitenoticias.png', 'Página modelo para um site de notícia com Bootstrap']
+    ['0', 'image/clinicamedica.jpg', 'Lading Page clínica Médica com Html, css criada durante curso'],
+    ['1','image/orcamentopessoal.jpg', 'Aplicação para controle de despesas, podendo criar e excluir despesas'],
+    ['2','image/matainseto.jpg', 'Jogo divertido mata inseto com limite de vida e cronômetro para a vitória'],
+    ['3','image/climatempo.jpg', 'Aplicação ligada ao uma API que informa o clima na cidade procurada'],
+    ['4','image/sitenoticias.jpg', 'Página modelo para um site de notícia com Bootstrap']
 ]
 
 function mudaImageProj(e){
